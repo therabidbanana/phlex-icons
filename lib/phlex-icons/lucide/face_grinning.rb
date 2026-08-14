@@ -2,7 +2,7 @@
 
 module PhlexIcons
   module Lucide
-    class SmilePlus < Base
+    class FaceGrinning < Base
       def view_template
         svg(
           **attrs,
@@ -14,12 +14,13 @@ module PhlexIcons
           stroke_linecap: 'round',
           stroke_linejoin: 'round'
         ) do |s|
-          s.path(d: 'M22 11v1a10 10 0 1 1-9-10')
-          s.path(d: 'M8 14s1.5 2 4 2 4-2 4-2')
-          s.line(x1: '9', x2: '9.01', y1: '9', y2: '9')
-          s.line(x1: '15', x2: '15.01', y1: '9', y2: '9')
-          s.path(d: 'M16 5h6')
-          s.path(d: 'M19 2v6')
+          s.path(d: 'M15 10V9')
+          s.path(
+            d:
+              'M7.084 14.302a5.12 5.12 0 009.833 0 .24.24 0 00-.235-.302H7.32a.24.24 0 00-.235.302'
+          )
+          s.path(d: 'M9 10V9')
+          s.circle(cx: '12', cy: '12', r: '10')
         end
       end
     end
