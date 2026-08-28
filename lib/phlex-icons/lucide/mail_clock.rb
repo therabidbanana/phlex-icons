@@ -2,7 +2,7 @@
 
 module PhlexIcons
   module Lucide
-    class CircleDot < Base
+    class MailClock < Base
       def view_template
         svg(
           **attrs,
@@ -14,8 +14,11 @@ module PhlexIcons
           stroke_linecap: 'round',
           stroke_linejoin: 'round'
         ) do |s|
-          s.circle(cx: '12', cy: '12', r: '1')
-          s.circle(cx: '12', cy: '12', r: '10')
+          s.path(d: 'M16 14v2.2l1.6 1')
+          s.path(d: 'm22 7-.759.484')
+          s.path(d: 'M6.835 20H4a2 2 0 01-2-2V6a2 2 0 012-2h16a2 2 0 012 2v2')
+          s.path(d: 'M7.605 10.567 2 7')
+          s.circle(cx: '16', cy: '16', r: '6')
         end
       end
     end

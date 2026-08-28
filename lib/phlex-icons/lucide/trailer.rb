@@ -2,7 +2,7 @@
 
 module PhlexIcons
   module Lucide
-    class CircleDot < Base
+    class Trailer < Base
       def view_template
         svg(
           **attrs,
@@ -14,8 +14,12 @@ module PhlexIcons
           stroke_linecap: 'round',
           stroke_linejoin: 'round'
         ) do |s|
-          s.circle(cx: '12', cy: '12', r: '1')
-          s.circle(cx: '12', cy: '12', r: '10')
+          s.path(d: 'M10 11.341V10')
+          s.path(d: 'M14 13v-3')
+          s.path(d: 'M18 17V8a2 2 0 00-2-2H4a2 2 0 00-2 2v7a2 2 0 002 2h2')
+          s.path(d: 'M22 15v1a1 1 0 01-1 1H10')
+          s.path(d: 'M6 11.341V10')
+          s.circle(cx: '8', cy: '17', r: '2')
         end
       end
     end

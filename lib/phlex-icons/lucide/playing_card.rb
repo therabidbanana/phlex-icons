@@ -2,7 +2,7 @@
 
 module PhlexIcons
   module Lucide
-    class CircleDot < Base
+    class PlayingCard < Base
       def view_template
         svg(
           **attrs,
@@ -14,8 +14,11 @@ module PhlexIcons
           stroke_linecap: 'round',
           stroke_linejoin: 'round'
         ) do |s|
-          s.circle(cx: '12', cy: '12', r: '1')
-          s.circle(cx: '12', cy: '12', r: '10')
+          s.path(
+            d:
+              'M12.832 8.445a1 1 0 00-1.589-.098l-2.075 3.098a1 1 0 000 1.11l2 3a1 1 0 001.664 0l2-3a1 1 0 000-1.11z'
+          )
+          s.rect(x: '5', y: '2', width: '14', height: '20', rx: '2')
         end
       end
     end

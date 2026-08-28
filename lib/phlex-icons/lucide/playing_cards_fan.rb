@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
+# rubocop:disable Layout/LineLength
 module PhlexIcons
   module Lucide
-    class Swords < Base
+    class PlayingCardsFan < Base
       def view_template
         svg(
           **attrs,
@@ -14,22 +15,18 @@ module PhlexIcons
           stroke_linecap: 'round',
           stroke_linejoin: 'round'
         ) do |s|
-          s.path(d: 'm13 19 6-6')
           s.path(
             d:
-              'M14.5 17.5 3.586 6.586A2 2 0 013 5.172V3h2.172a2 2 0 011.414.586L17.5 14.5'
+              'M12.65 7.65a2 2 0 012.629-1.046l5.51 2.374a2 2 0 011.046 2.628l-3.957 9.184a2 2 0 01-2.628 1.046l-5.51-2.374a2 2 0 01-1.046-2.628z'
           )
+          s.path(d: 'M18 7.777V4a2 2 0 00-2-2h-6a2 2 0 00-2 2v10a2 2 0 001.137 1.805')
           s.path(
             d:
-              'm14.828 6.172 2.586-2.586A2 2 0 0118.828 3H21v2.172a2 2 0 01-.586 1.414l-2.586 2.586'
+              'm8 4.389-4.364.809a2 2 0 00-1.602 2.33l1.822 9.833a2 2 0 002.331 1.602l2.542-.47'
           )
-          s.path(d: 'm16 16 4 4')
-          s.path(d: 'm19 21 2-2')
-          s.path(d: 'm5 14 4 4')
-          s.path(d: 'm5 21-2-2')
-          s.path(d: 'M7.5 16.5 4 20')
         end
       end
     end
   end
 end
+# rubocop:enable Layout/LineLength
